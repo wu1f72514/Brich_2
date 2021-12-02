@@ -1,5 +1,3 @@
-import shop from '../../api/shop';
-
 // initial state
 // shape: [{ id, quantity }]
 const state = () => ({
@@ -37,7 +35,7 @@ const actions = {
     commit('setCheckoutStatus', null);
     // empty cart
     commit('setCartItems', { items: [] });
-    shop.buyProducts(
+    /*shop.buyProducts(
       products,
       () => commit('setCheckoutStatus', 'successful'),
       () => {
@@ -45,7 +43,7 @@ const actions = {
         // rollback to the cart saved before sending the request
         commit('setCartItems', { items: savedCartItems });
       }
-    );
+    );*/
   },
 
   addProductToCart({ state, commit }, product) {

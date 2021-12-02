@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import store from './store';
 import TopBar from './components/TopBar.vue';
 import Main from './components/Main.vue';
 import BottomBar from './components/BottomBar.vue';
